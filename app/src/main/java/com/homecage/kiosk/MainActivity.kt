@@ -19,6 +19,7 @@ import android.text.TextUtils
 import android.text.TextWatcher
 import android.view.Gravity
 import android.view.View
+import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.view.ViewGroup
 import android.widget.AdapterView
@@ -185,6 +186,12 @@ class MainActivity : Activity() {
             .create()
 
         dialog.setCanceledOnTouchOutside(false)
+        dialog.window?.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE)
+        val immPin = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        input.setOnFocusChangeListener { v, hasFocus ->
+            if (hasFocus) immPin.showSoftInput(v, InputMethodManager.SHOW_IMPLICIT)
+        }
+        input.setOnClickListener { immPin.showSoftInput(input, InputMethodManager.SHOW_IMPLICIT) }
         dialog.setOnShowListener {
             pinDialogShowing = true
             val openButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
