@@ -19,6 +19,7 @@ import android.text.TextUtils
 import android.text.TextWatcher
 import android.view.Gravity
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
@@ -212,7 +213,10 @@ class MainActivity : Activity() {
                     }
                 }
             }
-            enterImmersiveMode()
+            // O modo imersivo esconde o IME neste dialog; focar e pedir o teclado explicitamente.
+            input.requestFocus()
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.showSoftInput(input, InputMethodManager.SHOW_IMPLICIT)
             policyManager.startLockTaskIfReady(this)
         }
         dialog.setOnDismissListener {
