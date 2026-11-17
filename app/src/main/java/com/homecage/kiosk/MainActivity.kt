@@ -54,6 +54,7 @@ class MainActivity : Activity() {
     private var currentScreen = Screen.LAUNCHER
     private var syncInFlight = false
     private var pinWorkInFlight = false
+    private var pinDialogShowing = false
 
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(AppLocaleManager.wrap(newBase))
@@ -83,7 +84,7 @@ class MainActivity : Activity() {
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-        if (hasFocus) enterImmersiveMode()
+        if (hasFocus && !pinDialogShowing) enterImmersiveMode()
     }
 
     @Deprecated("Deprecated in Java")
@@ -185,6 +186,7 @@ class MainActivity : Activity() {
 
         dialog.setCanceledOnTouchOutside(false)
         dialog.setOnShowListener {
+            pinDialogShowing = true
             val openButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
             openButton.isEnabled = false
             input.addTextChangedListener(object : TextWatcher {
@@ -220,6 +222,7 @@ class MainActivity : Activity() {
             policyManager.startLockTaskIfReady(this)
         }
         dialog.setOnDismissListener {
+            pinDialogShowing = false
             enterImmersiveMode()
             policyManager.startLockTaskIfReady(this)
         }
