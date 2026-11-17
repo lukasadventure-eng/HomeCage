@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">HomeCage</string>
+    <string name="default_pin">1234</string>
+    <string name="accessibility_service_description">O HomeCage bloqueia apps e telas do sistema não permitidos para que a criança não consiga sair do modo de proteção parental.</string>
+
+    <string name="action_admin">Admin</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_open">Abrir</string>
+    <string name="action_disable">Desativar</string>
+    <string name="action_yes">Sim</string>
+    <string name="action_no">Não</string>
+    <string name="action_back">Voltar</string>
+    <string name="action_save">Salvar</string>
+
+    <string name="section_quick_call">Ligação rápida</string>
+    <string name="section_apps">Apps</string>
+    <string name="section_allowed_apps">Apps permitidos</string>
+    <string name="section_protection_status">Status da proteção</string>
+    <string name="section_fallback_protection">Proteção sem Dispositivo administrador</string>
+    <string name="section_admin_pin">PIN de administrador</string>
+    <string name="section_remote_management">Gerenciamento remoto</string>
+    <string name="section_quick_calls">Ligações rápidas</string>
+    <string name="section_language">Idioma</string>
+    <string name="home_safe_mode_armed">Modo seguro: ativado</string>
+    <string name="home_section_quick_call">LIGAÇÃO RÁPIDA</string>
+    <string name="home_section_allowed_apps">APPS PERMITIDOS</string>
+    <string name="home_apps_allowed_one">%1$d app permitido</string>
+    <string name="home_apps_allowed_many">%1$d apps permitidos</string>
+    <string name="home_quick_contacts_one">%1$d contato rápido</string>
+    <string name="home_quick_contacts_many">%1$d contatos rápidos</string>
+    <string name="home_no_quick_contacts">Nenhum contato rápido configurado</string>
+    <string name="home_no_allowed_apps">Nenhum app permitido ainda</string>
+    <string name="home_lockdown_title">Dispositivo bloqueado</string>
+    <string name="home_lockdown_message">O modo perdido remoto está ativo. Apps, chamadas e configurações estão bloqueados até que o servidor desative esse modo.</string>
+    <string name="home_emergency_contact">Contato de emergência</string>
+    <string name="home_allowed_app_label">App permitido</string>
+    <string name="home_admin_content_description">Abrir Admin</string>
+    <string name="home_quick_call_content_description">Ligar para %1$s</string>
+    <string name="home_allowed_app_content_description">Abrir %1$s</string>
+
+    <string name="pin_label">PIN</string>
+    <string name="admin_pin_title">PIN de administrador</string>
+    <string name="current_pin_hint">PIN atual</string>
+    <string name="new_pin_hint">Novo PIN, de 4 a 12 dígitos</string>
+    <string name="button_change_pin">Alterar PIN</string>
+    <string name="error_wrong_pin">PIN incorreto</string>
+    <string name="error_enter_current_pin">Digite o PIN atual</string>
+    <string name="error_enter_4_12_digits">Digite de 4 a 12 dígitos</string>
+    <string name="default_pin_warning">O PIN padrão está definido: 1234. Altere-o.</string>
+    <string name="error_pin_check_failed">Erro ao verificar o PIN: %1$s</string>
+    <string name="error_pin_change_failed">Erro ao alterar o PIN: %1$s</string>
+    <string name="error_pin_change_default">Não foi possível alterar o PIN</string>
+    <string name="toast_pin_changed">PIN alterado</string>
+
+    <string name="toast_call_permission_enabled">Permissão de chamadas ativada</string>
+    <string name="toast_call_permission_missing">Sem permissão de chamadas, as ligações rápidas não funcionarão</string>
+    <string name="toast_location_permission_enabled">Permissão de localização ativada</string>
+    <string name="toast_location_permission_missing">Sem permissão de localização, as solicitações de localização do servidor serão reportadas como permissão negada</string>
+    <string name="toast_allowed_list_saved">Lista salva</string>
+    <string name="toast_kiosk_paused">Modo de bloqueio interrompido até você voltar ao app</string>
+    <string name="toast_protection_disabled">Proteção desativada. Você pode remover o app.</string>
+    <string name="toast_open_failed">Não foi possível abrir %1$s</string>
+    <string name="toast_launch_blocked">Inicialização bloqueada pelo Android</string>
+    <string name="toast_quick_calls_need_permission">Ligações rápidas exigem permissão de chamadas no Admin</string>
+    <string name="toast_call_failed">Não foi possível iniciar a chamada</string>
+    <string name="toast_lockdown_active">O modo perdido remoto está ativo</string>
+    <string name="toast_server_saved">Configurações do servidor salvas</string>
+    <string name="toast_quick_calls_saved">Ligações rápidas salvas</string>
+    <string name="toast_language_saved">Idioma salvo</string>
+
+    <string name="empty_no_allowed_apps">Nenhum app permitido</string>
+    <string name="empty_no_launchable_apps">Nenhum app com ícone de inicialização encontrado.</string>
+    <string name="system_badge">sistema</string>
+    <string name="time_none">nenhum</string>
+
+    <string name="button_pause_kiosk_admin">Pausar modo de bloqueio para admin</string>
+    <string name="button_disable_protection_remove">Desativar proteção para remover</string>
+    <string name="dialog_disable_protection_title">Desativar proteção?</string>
+    <string name="dialog_disable_protection_message">O Dispositivo administrador será desativado, o modo de bloqueio será interrompido e o app poderá ser removido pelas configurações do Android ou pelo ADB.</string>
+
+    <string name="dialog_quick_call_title">Ligação rápida</string>
+    <string name="dialog_quick_call_message">Ligar para %1$s?</string>
+
+    <string name="policy_device_owner_active">O Dispositivo administrador está ativo. O HomeCage está fixado como tela inicial e o Lock Task será aplicado aos apps selecionados.</string>
+    <string name="policy_device_owner_inactive">O Dispositivo administrador não está ativo. Sem ele, o Android pode permitir que a criança escolha o launcher normal e saia do app.\n\n%1$s\n%2$s</string>
+
+    <string name="status_enabled">ativado</string>
+    <string name="status_disabled">desativado</string>
+    <string name="status_allowed">permitido</string>
+    <string name="status_not_allowed">não permitido</string>
+    <string name="status_calls_allowed">permitido</string>
+    <string name="status_calls_not_allowed">não permitido</string>
+    <string name="fallback_status">Administrador de dispositivo: %1$s\nProteção por Acessibilidade: %2$s\nChamadas: %3$s\nLocalização: %4$s</string>
+    <string name="button_enable_device_admin">Ativar Administrador de dispositivo</string>
+    <string name="button_open_accessibility">Abrir Acessibilidade</string>
+    <string name="button_open_accessibility_service">Abrir Acessibilidade do HomeCage</string>
+    <string name="button_open_restricted_settings">Abrir configurações restritas</string>
+    <string name="button_allow_calls">Permitir chamadas</string>
+    <string name="button_allow_location">Permitir localização</string>
+    <string name="restricted_settings_help">Se o Android disser que o acesso foi negado, abra as configurações restritas, toque no menu de três pontos na página do app HomeCage, escolha Permitir configurações restritas, volte aqui e abra Acessibilidade novamente.</string>
+    <string name="toast_open_settings_failed">Não foi possível abrir as configurações do Android</string>
+
+    <string name="server_url_hint">https://kid.example.local</string>
+    <string name="device_name_hint">Nome do dispositivo mostrado no servidor</string>
+    <string name="server_token_hint">Token do servidor, se definido</string>
+    <string name="sync_status_format">Último sucesso: %1$s\nStatus: %2$s</string>
+    <string name="button_save_server">Salvar servidor</string>
+    <string name="button_sync_now">Sincronizar agora</string>
+    <string name="remote_server_info">O servidor substitui a lista local de apps após uma sincronização bem-sucedida.</string>
+
+    <string name="quick_call_editor_hint">Mamãe | +5511999000000</string>
+    <string name="button_save_quick_calls">Salvar ligações rápidas</string>
+    <string name="quick_calls_format_help">Formato: um contato por linha, por exemplo: Mamãe | +5511999000000</string>
+
+    <string name="language_info">Escolha o idioma da interface do HomeCage. Se nenhum idioma for selecionado, o idioma do sistema será usado quando compatível.</string>
+    <string name="language_system">Padrão do sistema</string>
+    <string name="button_save_language">Salvar idioma</string>
+
+    <string name="accessibility_block_title">Acesso bloqueado</string>
+    <string name="accessibility_block_message">Este app ou tela do sistema não é permitido.\n%1$s</string>
+    <string name="accessibility_return">Voltar</string>
+
+    <string name="sync_never">A sincronização ainda não foi executada</string>
+    <string name="sync_success_message">Sincronizados: %1$d apps</string>
+    <string name="sync_error_default">Erro de sincronização</string>
+    <string name="device_admin_explanation">O HomeCage usa a permissão de administrador de dispositivo para que a criança não possa remover o app sem o PIN.</string>
+    <string name="toast_kiosk_enable_failed">Não foi possível ativar o modo de bloqueio</string>
+    <string name="toast_clear_device_owner_failed">Não foi possível desativar o Dispositivo administrador</string>
+</resources>
